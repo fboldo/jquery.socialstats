@@ -16,7 +16,7 @@ Simple put this code after the jQuery library:
 Use data attributes to define which data do you want to get for each element:
 
 ```html
-<span class="socialstats" data-network="facebook"></span> <span class="socialstats" data-network="facebook" data-action="comments"></span> <span class="socialstats" data-network="twitter"></span>
+<span class="socialstats" data-network="facebook" data-url="http://www.google.com.br"></span> <span class="socialstats" data-network="facebook" data-action="comments" data-url="http://www.google.com.br"></span> <span class="socialstats" data-network="twitter" data-url="http://www.google.com.br"></span>
 ```
 
 And then, initialize the plugin:
@@ -25,3 +25,6 @@ And then, initialize the plugin:
 $(".socialstats").socialstats();
 ```
 
+## Author
+
+Hyperbolic - www.hyperbolic.com.br

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Hyperbolic">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<style>
+			h1,h2,p {
+				text-align: center;
+			}
+			.ss-socialstats {
+				margin-top: 70px;
+			}
+			.ss-socialstats>div {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			.fa {
+				font-size: 40px;
+			}
+			.socialstats {
+				font-size: 30px;
+				display: block;
+			}
+		</style>
+		<title>jQuery Socialstats Demonstration</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Social stats for <b>google.com</b></h1>
+			<div class="row ss-socialstats">
+				<div class="col-md-4 ss-twitter">
+					<i class="fa fa-twitter"></i>
+					<span class="socialstats" data-network="twitter" data-url="http://www.google.com"></span>
+				</div>
+				<div class="col-md-4 ss-facebook">
+					<i class="fa fa-facebook"></i>
+					<span class="socialstats" data-network="facebook" data-action="likes" data-url="http://www.google.com"></span>
+				</div>
+				<div class="col-md-4 ss-comments">
+					<i class="fa fa-comments"></i>
+					<span class="socialstats" data-network="facebook" data-action="comments" data-url="http://www.google.com"></span>
+				</div>
+			</div>
+			<footer>
+				<h2>This is a demo page from jQuery Socialstats Plugin</h2>
+				<p>jQuery Socialstats allows you to easily get plain text comments, likes and tweets number from a given URL.</p>
+				<p><a href="https://github.com/hyperbolicbr/jquery.socialstats" class="btn btn-primary">Get jQuery Socialstats</a></p>
+				<p><a href="https://www.hyperbolic.com.br" class="btn btn-link pull-right">Check <b>Hyperbolic</b> website</a></p>
+			</footer>
+		</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="jquery.socialstats.js"></script>
+		<script>
+			jQuery(document).ready(function($){
+				$(".socialstats").socialstats();
+			});
+		</script>
+	</body>
+</html>
