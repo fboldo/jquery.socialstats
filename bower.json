@@ -1,0 +1,22 @@
+{
+  "name": "jquery.socialstats",
+  "main": "jquery-socialstats.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/hyperbolicbr/jquery.socialstats",
+  "authors": [
+    "Hyperbolic"
+  ],
+  "description": "Jquery SocialStats allows you to easily get comments, likes and tweets from a given URL.",
+  "keywords": [
+    "social-stats",
+    "social"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
