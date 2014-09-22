@@ -1,7 +1,9 @@
 /*
- * jQuery Socialstats v1.0
- * https://github.com/hyperbolicbr/jquery.socialstats
- * Copyright 2014 Hyperbolic
+ * jQuery Socialstats
+ * Author: Hyperbolic - http://hyperbolic.com.br/
+ * Version: 1.0.0
+ * Url: https://github.com/hyperbolicbr/jquery.socialstats
+ * Licensed under MIT
  */
 
 ( function($) {
