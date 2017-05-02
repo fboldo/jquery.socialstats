@@ -29,13 +29,14 @@
 
 						$.getJSON(settings.facebookApi + "?ids=" + encodeURIComponent(elem.attr("data-url")), function(data) {
 
-							if (elem.attr("data-action") == "comments") {
-								counter = data[elem.attr("data-url")].comments;
-							} else if (elem.attr("data-action") == "all") {
-								counter = data[elem.attr("data-url")].shares+data[elem.attr("data-url")].comments;
-							} else {
-								counter = data[elem.attr("data-url")].shares;
-							}
+							 if (elem.attr("data-action") == "comments") {
+				                            counter = data[elem.attr("data-url")].share.comment_count;
+				                        } else if (elem.attr("data-action") == "all") {
+				                            counter = parseInt(data[elem.attr("data-url")].share.comment_count) + parseInt(data[elem.attr("data-url")].share.share_count);
+				                        } else {
+				                            counter = data[elem.attr("data-url")].share.share_count;
+				                        }
+
 
 							if ((counter != undefined)) {
 								elem.html(counter);
